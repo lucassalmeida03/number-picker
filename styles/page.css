@@ -1,0 +1,48 @@
+body {
+    background-image: url(../assets/Shapes.png);
+    background-color: #020202;
+
+    & .logo {
+       
+        display: flex;
+        gap: 11px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2.75rem;
+        
+        & h1 {
+            color:  var(--content-primary-color);
+            font: 800 1.5rem/130% 'Sora';
+            letter-spacing: -0.04em;
+            text-transform: uppercase;
+            width: 123px;
+            height: 31px;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (width >= 85.375rem) {
+body {
+
+    & .logo {
+       margin-left: 7.5rem;
+       margin-top: 4.75rem;
+       justify-content: initial;
+
+    }
+}
+
+}
