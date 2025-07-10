@@ -12,5 +12,35 @@
 --content-primary-color: #FFFFFF;
 --content-secondary-color: #C7C9CC;
 --content-brand-color: #C58DE7;
+--gradient-color: linear-gradient(90deg, 
+                #77C0AF 0%,
+                #D1DC97 15%,
+                #E9A9B3 32%,
+                #D586E0 67%,
+                #91A1FA 86%
+                );
+
+}
+
+.mobile-only {
+  display: initial;
+}
+
+.desktop-only {
+  display: none;
+}
+
+
+@media (width >=85.375rem) {
+
+  
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: initial;
+}
+
 
 }

@@ -14,16 +14,105 @@
 </head>
 
 <body>
+
     <div class="logo">
         <img src="assets/logooo.svg" alt="logo do sorteador de números">
         <h1>Numbers</h1>
     </div>
+    <div class="content">
+        <div class="content-left">
+            <header>
+                <h2>Online - gratuito</h2>
+                <h1>Sorteador <br>
+                    de números</h1>
+            </header>
 
-    <header>
-        <h2>Online - gratuito</h2>
-        <h1>Sorteador <br>
-            de números</h1>
-    </header>
+            <div class="questions desktop-only">
+                <div>
+                    <img src="assets/icons/listen.svg" alt="questions">
+                </div>
+                <div class="flex-question">
+                    <p class="p-1">Como funciona o sorteador de números?</p>
+                    <p class="p-2">O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do
+                        intervalo especificado pelo usuário.</p>
+                </div>
+            </div>
+
+            <div class="questions desktop-only">
+                <div>
+                    <img src="assets/icons/listen.svg" alt="questions">
+                </div>
+                <div class="flex-question">
+                    <p class="p-1">Posso escolher o intervalo dos números?</p>
+                    <p class="p-2">Sim, você pode definir os valores mínimo e máximo para o intervalo dos números
+                        sorteados.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-right">
+
+            <form action="post">
+                <div class="title-form">
+                    <h1>Quero sortear:</h1>
+                    <p>Defina o intervalo e a quantidade de números,<br class="mobile-only"> clique em "Sortear" <br
+                            class="desktop-only"> e veja os resultados na tela. É
+                        <br class="mobile-only"> rápido e fácil!
+                    </p>
+                </div>
+
+                <div class="fields">
+                    <div class="numbers-field">
+                        <label for="numbers">números</label>
+                        <input type="text" id="numbers">
+                    </div>
+
+                    <div class="numbers-field">
+                        <label for="of">de</label>
+                        <input type="text" id="of">
+                    </div>
+
+                    <div class="numbers-field">
+                        <label for="a">a</label>
+                        <input type="text" id="a">
+                    </div>
+                </div>
+
+                <div class="option-toggle">
+                    <div class="image-toggle"></div>
+                    <p>Não repetir número</p>
+                </div>
+                <div class="button">
+                    <button type="submit">Sortear</button>
+                    <img src="assets/icons/Frame (2).svg" alt="seta pro lado">
+                </div>
+            </form>
+        </div>
+
+  <div class="mobile-questions">
+        <div class="questions mobile-only">
+            <div>
+                <img src="assets/icons/listen.svg" alt="questions">
+            </div>
+            <div class="flex-question">
+                <p class="p-1">Como funciona o sorteador de números?</p>
+                <p class="p-2">O sorteador utiliza um algoritmo de geração <br> aleatória para criar números dentro do
+                    intervalo especificado pelo usuário.</p>
+            </div>
+        </div>
+
+        <div class="questions mobile-only">
+            <div>
+                <img src="assets/icons/listen.svg" alt="questions">
+            </div>
+            <div class="flex-question">
+                <p class="p-1">Posso escolher o intervalo dos números?</p>
+                <p class="p-2">Sim, você pode definir os valores mínimo e máximo <br> para o intervalo dos números
+                    sorteados.</p>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
 
 </html>
