@@ -31,10 +31,10 @@ let ativo = false;
 
 optionToggle.addEventListener("click", () => {
   if (!ativo) {
-    optionToggle.style.backgroundImage = "url('../assets/icons/state=active.svg')";
+    optionToggle.style.backgroundImage = "url('assets/icons/state=active.svg')";
     ativo = true;
   } else {
-    optionToggle.style.backgroundImage = "url('../assets/icons/state=default (1).svg')";
+    optionToggle.style.backgroundImage = "url('assets/icons/state=default (1).svg')";
     ativo = false;
   }
 });
