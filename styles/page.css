@@ -3,7 +3,6 @@ body {
     background-color: #020202;
 
     & .logo {
-
         display: flex;
         gap: 11px;
         align-items: center;
@@ -18,20 +17,17 @@ body {
             width: 123px;
             height: 31px;
         }
-
     }
 
     & .content-left {
 
         & header {
-
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 2.875rem;
 
             & h2 {
-
                 width: 19.9375rem;
                 text-transform: uppercase;
                 font: 700 1rem/150% 'Roboto Mono';
@@ -41,7 +37,6 @@ body {
                 -webkit-text-fill-color: transparent;
                 margin-bottom: .5rem;
                 text-justify: center;
-
             }
 
             & h1 {
@@ -50,14 +45,15 @@ body {
                 letter-spacing: -0.04em;
                 text-transform: uppercase;
                 color: #FFFFFF;
-
             }
         }
-
-
     }
 
     & .content-right {
+        
+        & .button {
+            margin: auto;
+        }
 
         & form {
             margin-top: 2.625rem;
@@ -66,14 +62,13 @@ body {
             align-items: center;
 
             & .title-form {
+
                 & h1 {
                     width: 19.9375rem;
                     font: 700 1.25rem/150% 'Roboto Flex';
                     text-transform: uppercase;
                     color: var(--content-primary-color);
                     margin-bottom: 2px;
-
-
                 }
 
                 & p {
@@ -84,7 +79,6 @@ body {
             }
 
             & .fields {
-
                 display: flex;
                 gap: 0.75rem;
                 width: 19.9375rem;
@@ -96,7 +90,6 @@ body {
                     width: 5.375rem;
                     height: 5.5rem;
                     align-items: center;
-
 
                     & label {
                         font: 700 1rem/150% 'Roboto Flex';
@@ -121,18 +114,14 @@ body {
                         font: bold 2rem/150% 'Sora';
                         text-align: center;
                         text-transform: uppercase;
-                        
-
                     }
 
                     &:hover {
                         & label {
-
                             background: var(--gradient-color);
                             background-clip: text;
                             -webkit-background-clip: text;
                             -webkit-text-fill-color: transparent;
-
                         }
 
                         & input {
@@ -144,14 +133,9 @@ body {
                                     #91A1FA 86%);
                             background-origin: border-box;
                             background-clip: padding-box, border-box;
-
                         }
-
-
                     }
                 }
-
-
             }
 
             & .option-toggle {
@@ -161,14 +145,12 @@ body {
                 align-items: center;
                 width: 19.9375rem;
 
-
                 & .image-toggle {
                     cursor: pointer;
                     background: url('../assets/icons/state=default (1).svg') center/cover no-repeat;
                     width: 1.875rem;
                     height: 1.25rem;
                 }
-
 
                 & p {
                     font: 400 0.75rem/150% 'Inter';
@@ -196,7 +178,6 @@ body {
                     position: absolute;
                     left: 12.71875rem;
                     top: 1rem;
-                   
                 }
 
                 &::before {
@@ -205,7 +186,6 @@ body {
                     border-radius: inherit;
                     background-color: #24222E;
                     inset: 2px;
-                    
                 }
 
                 & button {
@@ -221,7 +201,6 @@ body {
                 }
 
                 &:hover {
-
                     background: var(--gradient-color);
 
                     &::before {
@@ -231,22 +210,10 @@ body {
                     & img {
                         animation: arrowSide 2s ease-in both;
                     }
-
                 }
-
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
 
     & .content {
 
@@ -270,12 +237,9 @@ body {
                 }
 
                 & .p-2 {
-
                     font: 500 0.75rem/150% 'Roboto Flex';
                     color: #C7C9CC;
-
                 }
-
             }
 
             &>.questions.mobile-only:nth-child(1) {
@@ -286,46 +250,24 @@ body {
             &>.questions.mobile-only:nth-child(2) {
                 margin-bottom: 2.75rem;
             }
-
         }
     }
 
 }
 
-
-
-
-
 @keyframes arrowSide {
-
     0% {
         transform: translateX(0px);
     }
-
 
     50% {
         transform: translateX(10px);
     }
 
-
     100% {
         transform: translateX(0px);
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (width >=85.375rem) {
     body {
@@ -334,7 +276,6 @@ body {
             margin-left: 7.5rem;
             margin-top: 4.75rem;
             justify-content: initial;
-
         }
 
         & .content {
@@ -366,14 +307,11 @@ body {
                             font: 500 0.875rem/150% 'Roboto Flex';
                             color: #C58DE7;
                         }
-
                     }
 
                     & .p-2 {
-
                         font: 500 0.75rem/150% 'Roboto Flex';
                         color: #C7C9CC;
-
                     }
                 }
 
@@ -381,8 +319,6 @@ body {
                     margin-bottom: 2.25rem;
                 }
             }
-
-
 
             & header {
                 width: 31.75rem;
@@ -392,16 +328,13 @@ body {
                 margin-bottom: 2.375rem;
 
                 & h2 {
-
                     width: 29.961875rem;
                     margin-bottom: .75rem;
-
                 }
 
                 & h1 {
                     width: 29.961875rem;
                     font: 800 4.5rem/130% 'Sora';
-
                 }
             }
 
@@ -412,27 +345,24 @@ body {
                 align-items: center;
 
                 & .title-form {
+
                     & h1 {
                         width: 30.125rem;
                         font: 700 1.25rem/150% 'Roboto Flex';
                         text-transform: uppercase;
                         color: var(--content-primary-color);
                         margin-bottom: 2px;
-
-
                     }
 
                     & p {
                         width: 30.125rem;
                         font: 500 1rem/150% 'Roboto Flex';
-
                     }
                 }
 
                 & .fields {
                     width: 30.125rem;
                 }
-
 
                 & .option-toggle {
                     width: 30.125rem;
@@ -441,16 +371,14 @@ body {
                 & .button {
                     width: 30.125rem;
                     margin-top: 2.5rem;
-                    
-                & img {
-                    z-index: 1;
-                    position: absolute;
-                    left: 17.8rem;
-                    top: 1rem;
-                   
-                }
-                }
 
+                    & img {
+                        z-index: 1;
+                        position: absolute;
+                        left: 17.8rem;
+                        top: 1rem;
+                    }
+                }
             }
         }
     }

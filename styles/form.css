@@ -1,0 +1,290 @@
+/* Estilização para mostrar os resultados */
+.h1-text {
+  width: fit-content;
+  font-family: 'Roboto Flex';
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
+
+.h2-text {
+  width: fit-content;
+  font-family: 'Roboto Mono';
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #C7C9CC;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: .5rem;
+  width: 19.9375rem;
+  height: 3.5rem;
+  background: #24222E;
+  border-radius: .5rem;
+  cursor: pointer;
+  margin-top: 3.5rem;
+  position: relative;
+  margin: auto;
+
+  & img {
+    z-index: 1;
+    position: absolute;
+    left: 16rem;
+    top: 1rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    background-color: #24222E;
+    inset: 2px;
+  }
+
+  & button {
+    all: unset;
+    font: 700 1rem/150% 'Roboto Flex';
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 1;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+  }
+
+  &:hover {
+    background: var(--gradient-color);
+
+    &::before {
+      background-color: #111012;
+    }
+
+    & img {
+      rotate: 45deg;
+    }
+  }
+}
+
+.TranslateY {
+  animation: TransformY 1s both;
+}
+
+.Results {
+  width: 19.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4.375rem auto 10.3125rem;
+
+  & .showResults {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6rem;
+    max-width: 19.875rem;
+  
+    /* Estilização e animação para a entrada do primeiro número sorteado. */
+    & .firstNumber {
+      margin-top: 2.5rem;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin: auto;
+
+      & .numberCircle {
+        width: 5.25rem;
+        height: 5.25rem;
+        border-radius: 1.75rem;
+        background-color: var(--content-brand-color);
+        position: absolute;
+        animation: aparecerExpandir 0.5s ease-out forwards, animation-result 1s linear 0.5s forwards, desaparecer 0.5s linear 1.5s forwards;
+      }
+
+      & .numberResult {
+        font-family: 'Roboto Mono';
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 5.25rem;
+        text-transform: uppercase;
+        color: #030203;
+        animation: animation-number 0.5s forwards, diminuir-number 0.5s linear 1.5s forwards;
+        position: absolute;
+        width: fit-content;
+        text-align: center;
+        height: 5.25rem;
+      }
+    }
+
+    & .animation-resultado {
+      animation: transformX 0.5s linear 2s forwards;
+    }
+
+    & .number-static {
+      font-family: 'Roboto Mono';
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 5.25rem;
+      text-transform: uppercase;
+      color: var(--content-brand-color);
+      position: absolute;
+      width: fit-content;
+      text-align: center;
+      height: 5.25rem;
+    }
+
+    /* Estilização e animação para a entrada dos seguintes números após o primeiro. */
+    & .enterNumber {
+      margin-top: 2.5rem;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin: auto;
+    
+      & .numberCircle {
+        width: 5.25rem;
+        height: 5.25rem;
+        border-radius: 1.75rem;
+        background-color: var(--content-brand-color);
+        position: absolute;
+        animation: aparecerExpandir 0.5s ease-out forwards, animation-result 1s linear 0.5s forwards, desaparecer 0.5s linear 1.5s forwards;
+      }
+
+      & .numberResult {
+        font-family: 'Roboto Mono';
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 5.25rem;
+        text-transform: uppercase;
+        color: #030203;
+        animation: animation-number 0.5s forwards, diminuir-number 0.5s linear 1.5s forwards;
+        position: absolute;
+        width: fit-content;
+        text-align: center;
+        height: 5.25rem;
+      }
+    }
+  }
+}
+
+@keyframes aparecerExpandir {
+  0% {
+    scale: 0;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes desaparecer {
+  0% {
+    scale: 1;
+  }
+
+  100% {
+    scale: 0;
+  }
+}
+
+@keyframes animation-result {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(45deg);
+  }
+
+  50% {
+    transform: rotate(90deg);
+  }
+
+  75% {
+    transform: rotate(135deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes transformX {
+  0% {
+    transform: translateX(0rem);
+  }
+
+  90% {
+    transform: translateX(-3rem);
+  }
+
+  100% {
+    transform: translateX(-2.5rem);
+  }
+}
+
+@keyframes animation-number {
+  0% {
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes diminuir-number {
+  0% {
+    scale: 1;
+    color: #030203;
+  }
+
+  100% {
+    scale: 0.7059;
+    color: var(--content-brand-color);
+  }
+}
+
+@keyframes TransformY {
+  0% {
+    transform: translateY(0rem);
+  }
+
+  100% {
+     transform: translateY(-3rem);
+  }
+}
+
+@media (width >=85.375rem) {
+  .Results {
+   margin-top: 6.6875rem;
+  }
+  
+  .buttons {
+    width: 30.125rem;
+    margin-top: 2.5rem;
+
+    & img {
+      z-index: 1;
+      position: absolute;
+      left: 21rem;
+      top: 1rem;
+    }
+  }
+}
